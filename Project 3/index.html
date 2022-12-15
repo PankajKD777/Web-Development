@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo Gallery Site</title>
+</head>
+<body>
+    <h1>Welcome To PC Gallery</h1>
+    <h6>Some Wallpapers for Mac OS</h6>
+    <div class="myProducts">
+        <div class="myProducts-gallery">
+            <img src="Images/wallpaperflare.com_wallpaper (1).jpg" alt="click here"  onclick="myImageFunction(this)" >
+            <img src="Images/wallpaperflare.com_wallpaper (11).jpg" alt="click here" onclick="myImageFunction(this)">
+            <img src="Images/wallpaperflare.com_wallpaper (3).jpg" alt="click here" onclick="myImageFunction(this)">
+            <img src="Images/wallpaperflare.com_wallpaper (4).jpg" alt="click here" onclick="myImageFunction(this)">
+            
+
+        </div>
+
+        <div class="Image-container">
+            <img id="img-Box" src="Images/wallpaperflare.com_wallpaper.jpg" alt="click here" onclick="myImageFunction(this)">
+
+        </div>
+    </div>
+    
+    <script>
+        function myImageFunction(productSmallImg) {
+            var productFullImg = document.getElementById("img-Box");
+            productFullImg.src = productSmallImg.src;
+        }
+
+    </script>
+
+
+</body>
+</html>
